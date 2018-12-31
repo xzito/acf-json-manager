@@ -1,0 +1,26 @@
+{
+  "name": "xzito/acf-json-manager",
+  "version": "0.1",
+  "type": "wordpress-muplugin",
+  "description": "Sets up the ACF local JSON feature.",
+  "homepage": "https://github.com/xzito/acf-json-manager",
+  "authors": [
+    {
+      "name": "James Boynton",
+      "email": "james.boynton0@gmail.com",
+      "homepage": "https://github.com/jbboynton"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/xzito/acf-json-manager/issues"
+  },
+  "require": {
+    "php": "^7.2.0",
+    "composer/installers": "^1.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xzito\\ACF_JSON\\" : "src"
+    }
+  }
+}

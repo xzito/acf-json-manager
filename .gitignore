@@ -1,0 +1,11 @@
+# Files
+# -----
+.DS_Store
+.env*
+.htaccess
+.log
+.sql
+
+# Directories
+# -----------
+vendor/
