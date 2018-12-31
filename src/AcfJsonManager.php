@@ -7,10 +7,10 @@ class AcfJsonManager {
   private $group_being_saved;
 
   public function __construct() {
-    add_action('init', [$this, 'define_save_paths'], PHP_INT_MIN);
+    add_action('init', [$this, 'define_save_paths'], 0);
 
     add_filter('acf/settings/load_json', [$this, 'load']);
-    add_action('acf/update_field_group', [$this, 'update'], PHP_INT_MIN);
+    add_action('acf/update_field_group', [$this, 'update'], 0);
   }
 
   public function define_save_paths() {
