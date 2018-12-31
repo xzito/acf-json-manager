@@ -16,11 +16,13 @@ class Paths {
   }
 
   private static function group_path_mappings() {
-    return [
-      'team' => [
-        'group' => 'group_5c17ca2630dea',
-        'path' => WP_CONTENT_DIR . '/mu-plugins/team/acf-json/',
-      ]
-    ];
+    $paths_file = get_template_directory() . '/acf_paths.php';
+    $mappings = [];
+
+    if (file_exists($paths_file)) {
+      $mappings = require $paths_file;
+    }
+
+    return $mappings;
   }
 }
